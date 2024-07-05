@@ -1,0 +1,32 @@
+      
+.star-rating {
+   margin-top: 15px;
+   display: flex;
+   padding-left: 5px;
+   gap: 5px;
+   user-select: none;
+   .star {
+      width: 15px;
+      height: 15px;
+      background-image: url('/assets/img/svg/star.svg');
+      background-size: cover;
+      cursor: pointer;
+      filter: opacity(30%) ;
+      transition: filter 0.3s;
+   }
+   .star.hover,
+   .star.selected {
+      filter: grayscale(0%);
+      
+   }
+   .count{
+      opacity: 0;
+      margin-top: 2px;
+   }
+}
+
+
+
+
+
+

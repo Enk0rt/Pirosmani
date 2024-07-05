@@ -1,0 +1,106 @@
+.footer{
+   margin-top: 60px;
+   background-color: $main-color;
+   color: $white ;
+   width: 100%;
+   padding: 0 $pad172;
+
+   .footer__wrapper{
+      display: flex;
+      justify-content: space-between;
+      
+      max-width: 1572px;
+      margin: 0 auto;
+      padding: 34px 0;
+      
+   }
+   
+   .footer__left {
+      .footer__left-phones {
+         display: flex;
+         gap: 132px;
+         .footer__left-phones-1,.footer__left-phones-2{
+            h3{
+               @include regular($f12, $white);
+            }
+            p{
+               @include medium($f18, $white);
+               margin-top: 10px;
+            }
+         }
+      }
+      p{
+         @include regular($f14, $white);
+         margin-top: 26px;
+      }
+      .footer__left-email{
+         @include regular($f18, $white)
+      }
+      a {
+         display: block;
+         width: 90px;
+
+         @include medium($f18, $white);
+         color: $white;
+         
+         padding-bottom: 2px;
+         margin-top: 18px;
+         border-bottom: 1px solid $white;
+      }
+      
+   }
+   
+   .footer__left-copyright {
+      display: flex;
+      gap: 120px;
+
+      p{
+         @include regular($f12, $white);
+      }
+   }
+   
+   .footer__right {
+      display: flex;
+      
+      gap: 132px;
+
+   }
+   
+   .footer__right-socials {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+      
+      .footer__right-socoals-insta,.footer__right-socoals-facebook {
+         position: relative;
+         margin-right: 4px;
+         @include medium($f14,$white);
+         letter-spacing: 3px;
+         &::after {
+               content: '>';
+               position: absolute;
+               top:1px;
+               right:-18px;
+            }
+      }
+   }
+      
+      
+      .footer__right-log {
+         display: block;
+         @include medium($f14,$white);
+         position: relative;
+         
+         img{
+            position: absolute;
+            color: $white;
+               width: 30px;
+               height: 30px;
+               top:-10px;
+               left: -40px;
+         }
+      }
+   }
+
+   
+   

@@ -1,0 +1,43 @@
+.help {
+   max-width:1576px;
+   margin: 0 auto;
+
+   &__title {
+      margin-top: 45px;
+      @include regular($f28, $black);
+   }
+
+   &__form {
+      margin-top: 25px;
+      max-width: 672px;
+   }
+
+   &__form-textaria {
+      @include form(100%, 174px);
+   }
+
+   &__form-container {
+      display: flex;
+      margin-top: 14px;
+      justify-content: space-between;
+      gap: 36px;
+   }
+
+   &__form-tel {
+      flex-grow: 1;
+      @include form(auto, 50px);
+   }
+
+   &__form-email {
+      flex-grow: 1;
+     @include form(auto, 50px);
+   }
+   &__form-btn{
+      margin-top: 60px;
+      margin-bottom: 190px;
+      @include medium($f18,$white);
+      &:hover{
+         scale: 1.1;
+      }
+   }
+}

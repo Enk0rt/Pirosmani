@@ -1,0 +1,53 @@
+.products__card {
+   @include medium($f14,black);
+   box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.15);
+
+   display: flex;
+   flex-direction: column;
+   width: 210px;
+   
+   margin-bottom: 20px;
+   border-radius: $radius;
+   user-select: none;
+  
+   h3{
+      padding: 0 5px;
+      margin-top:10px;
+   }
+   p{
+      padding: 0 5px;
+      min-height: 36px;
+      overflow: auto;
+      margin-top: 4px;
+      font-size: 12px;
+   }
+   .products__card-rate{
+      margin-top: 12px;
+      height: 12px;
+      background-color: gray;
+   }
+   .products__card-price{
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      span{
+         margin-left:14px;
+         @include regular($f12,$sub-text-color-gray);
+      }
+   }
+   .products__card-button{
+      font-size: 18px;
+      border-radius:0 0 $radius $radius;
+   }
+
+}
+
+ .products__card:hover {
+    transform: scale(1.1);
+    transition: .3s;
+ }
+
+.products__card-img {
+   border-radius: $radius $radius 0 0;
+
+}

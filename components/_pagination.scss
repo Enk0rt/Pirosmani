@@ -1,0 +1,34 @@
+.pagination {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+
+   button {
+      @include medium($f20, black);
+      margin: 0 5px;
+      padding: 8px 15px;
+
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+         background-color: #e4e4e4;
+         transition: .3s;
+      }
+   }
+
+   button.active {
+      background-color: $main-color;
+      color: white;
+   }
+
+   button.disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+   }
+
+   svg {
+      width: 15px;
+      height: 15px;
+   }
+}

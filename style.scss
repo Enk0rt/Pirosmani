@@ -1,0 +1,35 @@
+//Імпорт нормалізації css
+
+
+//Імпорт змінних
+@import 'abstracts/variables';
+
+//Імпорт міксинів
+@import 'abstracts/mixins';
+
+//Імпорт загальних стилів
+@import 'layout/default';
+
+//Імпорт стилів розмітки
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/main';
+@import 'layout/footer';
+
+//Імпорт компонентів
+@import 'components/btn';
+@import 'components/custom-select.scss';
+@import 'components/slider';
+@import 'components/product-card';
+@import 'components/rating';
+@import 'components/pagination';
+
+//Імпорт стилів сторінок
+@import 'pages/pages-style/card-page';
+@import 'pages/pages-style/cart';
+@import 'pages/pages-style/delivery';
+@import 'pages/pages-style/help';
+@import 'pages/pages-style/personal';
+@import 'pages/pages-style/vacancies';
+@import 'pages/pages-style/payment';
+

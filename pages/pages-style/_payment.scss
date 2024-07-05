@@ -1,0 +1,48 @@
+
+.payment {
+   max-width: 1576px;
+   margin: 0 auto;
+
+   &__title {
+      margin-top: 45px;
+      @include regular($f28, $black);
+
+   }
+
+   &__description {
+      margin-top: 24px;
+      @include regular($f22, $sub-text-color-gray);
+   }
+
+   &__nav {
+      margin-top: 124px;
+      display: flex;
+      gap: 80px;
+   }
+
+   &__nav-btn {
+      @include medium($f20, $white)
+   }
+
+   &__nav-btn:hover {
+      scale: 1.1;
+   }
+
+   &__nav-link {
+      display: flex;
+      align-items: center;
+
+      @include regular($f22, $main-color);
+
+      img {
+         margin-left: 20px;
+         margin-top: 3px;
+
+      }
+   }
+
+   &__nav-link:hover {
+      scale: 1.1;
+
+   }
+}

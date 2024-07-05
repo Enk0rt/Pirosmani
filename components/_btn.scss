@@ -1,0 +1,9 @@
+.btn{
+   background: $main-color;
+   border-radius: $radius;
+   
+   padding: 11px 42px;
+   @include medium($f24,$white);
+   cursor: pointer;
+   user-select: none;
+}

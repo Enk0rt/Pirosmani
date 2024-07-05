@@ -1,0 +1,49 @@
+// Змінити адресу оновлення файлу scss
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   outline: none;
+   line-height: 1;
+   transition: .3s all ease;
+}
+
+html {
+   margin-right: calc(-1 * (100vw - 100%));
+   overflow-x: hidden;
+}
+
+a{
+   text-decoration: none;
+   color: $black;
+}
+
+ul{
+   list-style: none;
+}
+
+h2{
+   font-weight: normal;
+}
+button{
+   border: none;
+   background: none;
+   padding: 0;
+}
+
+body{
+   @include regular(18px,$black);
+   background-color: $white;
+}
+
+.wrapper {
+   margin: 0 auto;
+   padding: 0 $pad172;
+
+}
+
+.wrapper-is-active{
+   z-index: -1;
+   position: relative;
+}

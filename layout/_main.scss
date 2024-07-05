@@ -1,0 +1,16 @@
+.main{
+   margin: 0 auto;
+   margin-top: 30px;
+   max-width: 1572px;
+
+  .products__title {
+         margin-top: 30px;
+         @include medium($f28, black);
+      }
+}
+
+.main-wrapper{
+   max-width: 1572px;
+  padding: 0;
+}
+

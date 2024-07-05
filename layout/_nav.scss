@@ -1,0 +1,66 @@
+nav{
+   display: flex;
+   justify-self:flex-start ;
+   flex-wrap: wrap;
+   align-items: center;
+   
+   padding-left:24px;  
+   position: relative;
+
+   .nav__list {
+      display: flex;
+      gap:86px;
+      @include medium($f18,$text-color-gray);
+   
+      .nav__list-item, a{
+         cursor: pointer;
+         &:hover {
+            color: $main-color;
+            transition: all .3s;
+         }
+         &:nth-child(1){
+         z-index: 10;
+         }
+      }
+   }
+}
+.nav__phone{
+   flex-direction: row-reverse;
+   display: flex;
+   padding:0 37px 0 15px;
+   flex-grow: 1;
+
+    a {
+      display: flex;
+
+      img {
+         align-self: center;
+         margin: 0 2px 2px 0;
+      }
+   }
+}
+
+.nav__right{
+   display: flex;
+   align-items: inherit; 
+   .nav__personal {
+      display: inherit;
+      justify-content: flex-end;
+      align-items: inherit;
+      gap: 33px;
+      .nav__personal-item {
+         display: flex;
+         align-items: center;
+        
+         .nav__personal-item-btn {
+         cursor: pointer;
+         }
+         .nav__personal-item-btn-cart {
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+
+

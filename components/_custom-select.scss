@@ -1,0 +1,48 @@
+.custom-select{
+   display: none;
+   position: absolute;
+   max-width: 158px;
+   top: -14px;
+   left: 3px;
+   z-index: 4;
+
+   background-color: $white;
+   filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.15));
+   border-radius: $radius ;
+
+   padding: 48px 0 0 0;
+   z-index: 2;
+   overflow: hidden;
+   user-select: none;
+   ul{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      @include regular(10px,$text-color-gray);
+   }
+   li{
+      display: flex;
+      align-items: center;
+      height: 34px;
+      gap: 14px;
+      padding: 0 12px 0 21px;
+      img{
+         width: 20px;
+         height: 20px;
+      }
+      
+   }
+}
+
+.custom-select__list{
+   cursor: pointer;
+   width: 100%;
+   li{
+      display: flex;
+      align-items: center;
+   }
+   :hover{
+     background-color: rgb(227, 227, 227);
+     transition: all .3s;
+   }
+}
