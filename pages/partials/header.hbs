@@ -1,0 +1,55 @@
+<header>
+    <div class="wrapper container">
+      <header class="header">
+            <div class="header__logo">
+               <a href="/">
+                  <img src="/assets/img/logo.png" alt="Logo" class="header__logo-item" >
+               </a>
+            </div>
+            {{>navbar}}
+            <div class="nav__phone">
+               <a href="#">
+                  <img src="/assets/img/svg/phone.svg" alt="Phone icon">
+                  <span>+380-95-340-3188</span>
+               </a>
+            </div>
+            <div class="nav__right">
+               <ul class="nav__personal">
+                  <li class="nav__personal-item">
+                    {{#if isUserCab}}
+                        
+                        {{else}}
+                        {{#if isAuth}}
+                        <button class="nav__personal-item-btn">
+                        <a href="/user-cab">
+                           <img src="/assets/img/svg/person.svg" alt="Person icon">
+                        </a>
+                        </button>
+                        {{else}}
+                        <button class="nav__personal-item-btn" id="loginBtn">
+                           <img src="/assets/img/svg/person.svg" alt="Person icon">
+                        </button>
+                        {{/if}}
+                  {{/if}}
+                  </li>
+                  <li class="nav__personal-item">
+                     <button class="nav__personal-item-btn-cart">
+                        <a href="/cart">
+                           <img src="/assets/img/svg/cart.svg" alt="Cart icon">
+                           <div class="cart-count"><span class="cart-count-num"></span></div>
+                        </a>
+                     </button>
+                  </li>
+                 {{#if isAuth}}
+                  <li class="nav__personal-item-logout">
+                        <a href="#" id="logoutBtn">
+                           <img src="/assets/img/logout.png" width="26" height="26" alt="Logout icon">
+                        </a>
+                  </li>
+                  {{else}}
+                 {{/if}}  
+               </ul>
+            </div>
+      </header>
+   </div>
+</header>

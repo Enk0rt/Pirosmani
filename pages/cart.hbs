@@ -1,0 +1,116 @@
+
+<body>
+   <main>
+      <div class="cart">
+         <h3 class="cart__title">
+            Кошик
+         </h3>
+         <div id="no-data">
+            <p>
+               Кошик порожній :&#40;
+            </p>
+         </div>
+         <div class="cart__container" id="order">
+           <section class="cart__products">
+               <ul class="cart__list" id="cart-list">
+               </ul>
+               <div class="promo cart__promo" id="cart__promo">
+                  <h3 class="promo__title">
+                     Замовте на 500 грн та отримайте
+                  </h3>
+                  <ul class="promo__list">
+                     <li class="promo__items">
+                        <img class="promo__items-pic" src="../assets/img/svg/pig.svg" alt="Money pig">
+                        <span>
+                           20 грн на бонусний рахунок
+                        </span>
+                     </li>
+                     <li class="promo__items">
+                        <img class="promo__items-pic" src="../assets/img/svg/delivery.svg" alt="Delivery car">
+                        <span>
+                           Безкоштовна доставка
+                        </span>
+                     </li>
+                  </ul>
+                  <div class="promo__calc">
+                     <span class="promo__calc-base">0</span>
+                     <div class="promo__calc-body">
+                        <h4 class="promo__calc-title current-amount"><span id="current-amount">250</span> (мінімальне замовлення)</h4>
+                        <div class="promo__calc-line">
+                           <input type="range" name="price-range" id="price-range" class="price-range" min="0" max="500" step="1" value="0" disabled>
+                        </div>
+                        <p class="promo__calc-info calc-info" id="calc-info">Залишилось <span class="promo__calc-remain" id="calc-remain">250</span> грн до безкоштовної доставки</p>
+                     </div>
+                     <span class="promo__calc-need">500</span>
+                  </div>
+               </div>
+           </section>
+            <div>
+               <div class="cart__order">
+                  <h3 class="cart__order-title">
+                     Замовлення №
+                  </h3>
+                  <div class="cart__order-info">
+                     <p class="cart__order-info-title">Товарів на суму </p>
+                     <p id="cart-sum">0 ₴</p>
+                  </div>
+                  <div class="cart__order-promocode">
+                     <p class="cart__order-promocode-title">Промокод</p>
+                     <p class="cart__order-promocode-value"></p>
+                  </div>
+                  <div class="cart__order-total">
+                     <p class="cart__order-total-title">Загальна вартість:</p>
+                     <p id="cart-total"></p>
+                  </div>
+                  <a href="/order" class="cart__order-btn btn">Оформити замовлення</a>
+               </div>
+               <div class="cart__promocode">
+                  <form class="cart__promocode-form">
+                     <h3 class="cart__promocode-form-title">Промокод</h3>
+                     <input type="text" class="cart__promocode-form-input" placeholder="Введіть промокод">
+                     <button  class="cart__promocode-form-btn btn" id="make-order">Підтвердити</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+<footer class="footer">
+   <div class="footer__wrapper">
+      <div class="footer__left">
+         <div class="footer__left-phones">
+            <div class="footer__left-phones-1">
+               <h3>Безкоштовний дзвінок по Україні</h3>
+               <p>+380-95-340-3188</p>
+            </div>
+            <div class="footer__left-phones-2">
+               <h3>Для прийому замовлень</h3>
+               <p>+380-95-340-3188</p>
+            </div>
+         </div>
+         <p>Графік работи по будням з 9:00 до 20:00</p>
+         <p class="footer__left-email">Email: info@ua</p>
+         <a href="/help" class="footer__left-help">Підтримка</a>
+         <div class="footer__left-copyright">
+            <p>©2023. Піросмані</p>
+            <p>Умови і згода</p>
+            <p>Політика конфіденційності</p>
+         </div>
+      </div>
+      <div class="footer__right">
+         <div class="footer__right-socials">
+            <a href="#" class="footer__right-socoals-insta">Ми в інстаграм</a>
+            <a href="#" class="footer__right-socoals-facebook">Ми в фейсбук</a>
+         </div>
+         <a href="#" class="footer__right-log">
+            <img src="/assets/img/svg/person-footer.svg" alt="Person icon">
+            Вхід/Реєстрація</a>
+      </div>
+   </div>
+</footer>
+
+<!-- MODULES -->
+
+
+</body>

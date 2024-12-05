@@ -1,0 +1,52 @@
+// PRODUCTS SECTION
+.products {
+   margin-top: 40px;
+   width: 100%;
+   display:grid;
+   grid-template-columns: repeat(5, 210px);
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.rating{
+   padding: 0 5px;
+   margin-top: 12px;
+}
+
+
+// VIDEO SECTION
+.video {
+   margin-top: 64px;
+   
+   display: flex;
+   max-width: 1572px;
+
+   
+   img {
+      border-radius: $radius;
+      width: 100%;
+   }
+}
+
+// PROMOTION SECTION
+
+.promotion {
+   margin-top: 64px;
+   display: flex;
+   justify-content: space-between;
+   background-color: $slider-bg;
+   border-radius: $radius;  
+}
+
+.promotion__announce {
+   padding: 47px 0 77px 64px;
+   h2{
+      max-width: 500px;
+   }
+}
+
+.promotion__btn {
+   margin-top: 74px;
+   padding: 21px 52px;
+   @include medium($f24, $white);
+}

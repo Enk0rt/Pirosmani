@@ -57,6 +57,7 @@ nav{
          }
          .nav__personal-item-btn-cart {
             cursor: pointer;
+            position: relative;
          }
       }
    }
@@ -64,3 +65,9 @@ nav{
 
 
 
+#logoutBtn{
+   img{
+      margin-top:2px;
+
+   }
+}

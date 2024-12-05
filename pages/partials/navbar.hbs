@@ -1,0 +1,27 @@
+<nav>
+   <div class="nav">
+      <ul class="nav__list">
+         {{#if isHome}}
+            <li class="nav__list-item dropdown active-page"><a class="active-page" href="/">Меню</a></li>
+            {{else}}
+            <li class="nav__list-item dropdown"><a href="/">Меню</a></li>
+         {{/if}}
+         {{#if isDelivery}}
+            <li class="nav__list-item active-page"><a class="active-page" href="/delivery">Доставка</a></li>
+            {{else}}
+            <li class="nav__list-item"><a href="/delivery">Доставка</a></li>
+         {{/if}}
+         {{#if isPayment}}
+            <li class="nav__list-item active-page"><a class="active-page" href="/delivery">Оплата</a></li>
+            {{else}}
+            <li class="nav__list-item"><a href="/payment">Оплата</a></li>
+         {{/if}}
+         <li class="nav__list-item" id="booking">Бронювання</li>
+
+         {{#if isHome}}
+            {{>dropdown-menu}}
+            {{else}}
+         {{/if}}
+      </ul>
+   </div>
+</nav>

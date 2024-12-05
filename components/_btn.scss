@@ -3,7 +3,10 @@
    border-radius: $radius;
    
    padding: 11px 42px;
-   @include medium($f24,$white);
+   @include medium($f12,$white);
    cursor: pointer;
    user-select: none;
+   &:hover{
+      background: #01ca5c;
+   }
 }

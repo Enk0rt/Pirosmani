@@ -1,0 +1,248 @@
+.order{
+   margin-top: 60px;
+      max-width: 1314px;
+      height: 664px;
+      margin: 60px auto 0 auto;
+      display: flex;
+      
+      gap: 100px;
+      .cart__products{
+         width: 780px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+      }
+   &__title{
+      @include medium($f28, 333333);
+   }
+   &__subtitle{
+      margin-top:25px; 
+      @include medium($f26, $black);
+   }
+   &__ticket{
+      width: 777px;
+      margin-top: 38px;
+         &-tabs{
+            height: 52px;
+            display: flex;
+            justify-items: start;
+            align-items: center;
+            &-btn{
+               margin: 0;
+               padding: 13px 45px;
+               cursor: pointer;
+               @include medium($f16, $sub-text-color-gray);
+               border: 1px solid transparent;
+               &:hover{
+                  border: 1px solid #01ca5c;
+                  border-radius: $radius;
+               }
+            }
+         }
+         &-container{
+            padding: 47px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            border-radius: $radius;
+               box-shadow: 0 0 27px rgba(0, 0, 0, 0.06);
+         }
+         &-list{
+            display: flex;
+            align-items: center;
+            
+            &-item{
+               width: 150px;
+               @include medium($f16, $black);
+               font-weight: 500;
+               #discount{
+                  color: $main-color;
+               }
+               &:nth-child(2){
+                  text-align: right;
+                  width: 200px;
+                  padding-left:50px;
+               }
+               &:nth-child(3){
+                  width:150px;
+                  text-align: left;
+                  margin-left: 158px;
+               }
+            }
+         }
+   }
+}  
+.btn-active{
+   background: $main-color;
+   border-radius: $radius;
+   @include medium($f20,$white);
+}
+
+
+// ----------------MAKING ORDER AREA----------------------
+
+.cart__make-order {
+   width: 100%;
+   &-form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+
+      &-input-title {
+         @include regular($f16, $black);
+         font-weight: 500;
+      }
+
+      &-input-name,
+      &-input-tel {
+         margin-top: 4px;
+         padding: 20px 28px;
+         background: #FCFCFC;
+         border: 1px solid #EBEBEB;
+         border-radius: 10px;
+         outline: none;
+         @include medium($f16, $black);
+
+         &::placeholder {
+            @include regular($f16, #C6C6C6);
+         }
+      }
+
+      &-input-tel {}
+
+      &-btn {
+         
+         border: none;
+         @include medium($f24, $white);
+      }
+
+      &-comment {
+         height:20px;
+         width: 132px;
+         @include medium($f16, $main-color);
+         cursor: pointer;
+
+         &:hover {
+            border-bottom: 2px solid $main-color;
+            transition: 0s;
+         }
+      }
+
+      &-textarea {
+         display: none;
+         padding: 15px;
+         height: 150px;
+         resize: none;
+         border: 1px solid #EBEBEB;
+         border-radius: 10px;
+         text-align: left;
+         @include regular($f18, $black);
+         white-space:unset;
+         &::placeholder {
+            @include regular($f16, #C6C6C6);
+         }
+         &:focus{
+            border: 1px solid $main-color;
+         }
+      }
+   }
+}
+
+.box {
+   height: 25px;
+}
+
+// ------------ CUSTOM SELECT ---------------
+
+.select {
+   position: relative;
+   display: flex;
+   
+
+   &__header {
+      width: 100%;
+      display: flex;
+      padding: 20px 28px;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+   }
+
+   &__body {
+      display: none;
+      max-height: 100px;
+      position: absolute;
+      top: 60px;
+      background: white;
+      z-index: 2;
+      border-radius: 0 0 0 10px;
+   }
+
+   &__current {
+      @include regular($f16, #C6C6C6);
+   }
+
+   &__icon img {
+      display: block;
+      width: 16px;
+      height: 16px;
+      transform: rotate(90deg);
+      cursor: pointer;
+   }
+
+   &__item {
+      width: 437px;
+      padding: 8px 28px;
+      border: 1px solid #EBEBEB;
+      background: #FCFCFC;
+      cursor: pointer;
+      z-index: 1;
+      opacity: 1;
+
+      &:last-child {
+         border-radius: 0 0 0 10px;
+      }
+
+      &:hover {
+         background: #f1f1f1;
+      }
+   }
+}
+
+.select.is-active .select__body {
+   display: block;
+
+}
+// ----------------------------------------------------------------
+
+
+.takeout{
+   
+   padding-top: 96px;
+   
+   &__form{
+      height: 100%;
+      justify-content: space-between;
+   }
+   &__title{
+     
+   }
+   &__name{
+      margin-top: 18px;
+   }
+   &__tel{
+
+   }
+   &__time{
+      max-height: 145px;
+      overflow-y: auto;
+   }
+   &__btn{
+
+   }
+}

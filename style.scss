@@ -16,6 +16,11 @@
 @import 'layout/main';
 @import 'layout/footer';
 
+// Імпорт попапів
+@import 'popup/log';
+@import 'popup/reg';
+@import 'popup/book';
+@import 'popup/email';
 //Імпорт компонентів
 @import 'components/btn';
 @import 'components/custom-select.scss';
@@ -24,12 +29,16 @@
 @import 'components/rating';
 @import 'components/pagination';
 
+
 //Імпорт стилів сторінок
-@import 'pages/pages-style/card-page';
+@import 'pages/pages-style/main-page';
 @import 'pages/pages-style/cart';
 @import 'pages/pages-style/delivery';
 @import 'pages/pages-style/help';
 @import 'pages/pages-style/personal';
 @import 'pages/pages-style/vacancies';
 @import 'pages/pages-style/payment';
+@import 'pages/pages-style/product';
+@import 'pages/pages-style/_order';
+@import 'pages/pages-style/user-cab';
 

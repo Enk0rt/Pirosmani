@@ -24,7 +24,7 @@
             margin-top: 16px;
          }
          
-         a{
+         button{
             display: inline-block;
             margin-top: 34px;
             color:$white;
@@ -98,3 +98,8 @@
          }
       }
    }
+
+.swipe__btn{
+   padding: 12px 45px;
+   @include medium($f24,$white);
+}

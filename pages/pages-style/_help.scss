@@ -14,6 +14,7 @@
 
    &__form-textaria {
       @include form(100%, 174px);
+      resize: none;
    }
 
    &__form-container {

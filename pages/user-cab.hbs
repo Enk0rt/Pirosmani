@@ -1,0 +1,264 @@
+
+<body>
+   <main>
+      <section class="user-cab">
+         
+            <div class="box">
+               <div class="user-cab__personal-info">
+                  <div class="user-cab__switch-buttons">
+                     <button class="user-cab__switch-btn btn-active" id="personal-data">
+                        <img src="../assets/img/svg/personal-info.svg" alt="Laptop icon" class="user__cab-switch-btn-pic"
+                           id="userDataImg">
+                        <span>Особисті дані</span>
+                     </button>
+                     <button class="user-cab__switch-btn" id="order-history">
+                        <img src="../assets/img/svg/order-history.svg" alt="Papersheet" class="user__cab-switch-btn-pic"
+                           id="orderHistoryImg">
+                        <span>Історія замовлень</span>
+                     </button>
+                  </div>
+            
+                  <div class="information active-page">
+                     <h3 class="user-cab__title">
+                        Персональная информация
+                     </h3>
+                     <div class="user-cab__avatar">
+                        <div class="user-cab__avatar-spot">
+            
+                        </div>
+                        <button class="user-cab__avatar-upload">Завантажити фотографію</button>
+                     </div>
+            
+                     <form action="post" class="user-cab__form">
+                        <input type="hidden" name="_csrf">
+                        <div class="user-cab__form-input-name">
+                           <label class="user-cab__form-label name" id="name">
+                              <span>Ваше ім’я</span>
+                              <input type="name" class="user-cab__form-input input" placeholder="Ім'я">
+                           </label>
+                           <label class="user-cab__form-label name">
+                              <span>Ваше прізвище</span>
+                              <input type="name" class="user-cab__form-input input" placeholder="Прізвище">
+                           </label>
+                        </div>
+                        <label class="user-cab__form-label">
+                           <span>По-батькові</span>
+                           <input type="name" class="user-cab__form-input input" placeholder="По-батькові">
+                        </label>
+                        <label class="user-cab__form-label">
+                           <span>Адреса електронної пошти</span>
+                           <input type="email" class="user-cab__form-input input" placeholder="E-mail">
+                        </label>
+                     </form>
+                  </div>
+               </div>
+         
+            
+            <div class="user-cab__other active-page">
+               <h3 class="user-cab__other-title">
+                  Контактная информация
+                  <span class="user-cab__other-title-smallcase">(подтверждение заказов)</span>
+               </h3>
+               <div class="user-cab__other-phone-container">
+                  <label>
+                     <span>Основний телефон</span>
+                     <input type="tel" class="user-cab__form-input user-cab__other-phone-input input" placeholder="+380">
+                  </label>
+                  <label>
+                     <span>Додатковий</span>
+                     <input type="tel" class="user-cab__form-input user-cab__other-phone-input input" placeholder="+380">
+                  </label>
+               </div>
+               <h3 class="user-cab__title">
+                  Зміна пароля
+               </h3>
+               <div class="user-cab__other-password">
+                  <label class="user-cab__form-label user-cab__other-form-label">
+                     <span>Ваш старий пароль</span>
+                     <input type="pass" class="user-cab__form-input input" placeholder="Старий пароль">
+                  </label>
+                  <label class="user-cab__other-form-label">
+                     <span>Ваш новий пароль</span>
+                     <input type="pass" class="user-cab__form-input input" placeholder="Новий пароль">
+                  </label>
+                  <label class="user-cab__other-form-label">
+                     <span>Підтвердження</span>
+                     <input type="pass" class="user-cab__form-input input" placeholder="Підтвердьте пароль">
+                  </label>
+               </div>
+               <input type="submit" class="user-cab__form-submit btn" value="Зберегти зміни">
+            </div>
+         </div>
+      
+
+      <section class="history">
+            
+         <div class="history__card">
+            <div class="history__card-titles">
+               <p class="history__card-titles-item">Номер замовлення</p>
+               <p class="history__card-titles-item">Спосіб оплати</p>
+               <p class="history__card-titles-item">Дата замовлення:</p>
+               <p class="history__card-titles-item">Дата доставки:</p>
+               <p class="history__card-titles-item">Статус замовлення:</p>
+            </div>
+            <div class="history__card-values">
+               <p class="history__card-titles-item order-number">Замовлення №2334678954</p>
+               <p class="history__card-titles-item payment-method">Банківска карта</p>
+               <p class="history__card-titles-item ordered">19.05.2020</p>
+               <p class="history__card-titles-item completed">23.05.2020</p>
+               <p class="history__card-titles-item status-completed">Доставлено</p>
+            </div>
+            <div class="history__card-order-container">
+              <div class="ordered">
+               <div class="history__card-order">
+                  <img src="../assets/img/product-big.jpg" alt="Product blank" class="history__card-order-img">
+                  <p class="history__card-order-name">Хачапурі</p>
+                  <div class="history__card-order-quantity">
+                     <span class="history__card-order-quantity-value">1шт</span>
+                  </div>
+                  <p class="history__card-order-price">350 ₴</p>
+               </div>
+               <div class="history__card-order">
+                  <img src="../assets/img/product-big.jpg" alt="Product blank" class="history__card-order-img">
+                  <p class="history__card-order-name">Хачапурі</p>
+                  <div class="history__card-order-quantity">
+                     <span class="history__card-order-quantity-value">1шт</span>
+                  </div>
+                  <p class="history__card-order-price">350 ₴</p>
+               </div>
+               <div class="history__card-order">
+                  <img src="../assets/img/product-big.jpg" alt="Product blank" class="history__card-order-img">
+                  <p class="history__card-order-name">Хачапурі</p>
+                  <div class="history__card-order-quantity">
+                     <span class="history__card-order-quantity-value">1шт</span>
+                  </div>
+                  <p class="history__card-order-price">350 ₴</p>
+               </div>
+              </div>
+               <button class="history__card-order-btn">
+                  <span>Повторити замовлення</span>
+                  <img src="../assets/img/svg/circle.svg" alt="Remake order icon">
+               </button>
+            </div>
+         </div>
+         <div class="history__card">
+            <div class="history__card-titles">
+               <p class="history__card-titles-item">Номер замовлення</p>
+               <p class="history__card-titles-item">Спосіб оплати</p>
+               <p class="history__card-titles-item">Дата замовлення:</p>
+               <p class="history__card-titles-item">Дата доставки:</p>
+               <p class="history__card-titles-item">Статус замовлення:</p>
+            </div>
+            <div class="history__card-values">
+               <p class="history__card-titles-item order-number">Замовлення №2334678954</p>
+               <p class="history__card-titles-item payment-method">Банківска карта</p>
+               <p class="history__card-titles-item ordered">19.05.2020</p>
+               <p class="history__card-titles-item completed">23.05.2020</p>
+               <p class="history__card-titles-item status-canceled">Відмінено</p>
+            </div>
+            <div class="history__card-order-container">
+               <div class="ordered">
+                  <div class="history__card-order">
+                     <img src="../assets/img/product-big.jpg" alt="Product blank" class="history__card-order-img">
+                     <p class="history__card-order-name">Хачапурі</p>
+                     <div class="history__card-order-quantity">
+                        <span class="history__card-order-quantity-value">1шт</span>
+                     </div>
+                     <p class="history__card-order-price">350 ₴</p>
+                  </div>
+                  <div class="history__card-order">
+                     <img src="../assets/img/product-big.jpg" alt="Product blank" class="history__card-order-img">
+                     <p class="history__card-order-name">Хачапурі</p>
+                     <div class="history__card-order-quantity">
+                        <span class="history__card-order-quantity-value">1шт</span>
+                     </div>
+                     <p class="history__card-order-price">350 ₴</p>
+                  </div>
+               </div>
+               <button class="history__card-order-btn">
+                  <span>Повторити замовлення</span>
+                  <img src="../assets/img/svg/circle.svg" alt="Remake order icon">
+               </button>
+            </div>
+         </div>
+         <div class="history__card">
+            <div class="history__card-titles">
+               <p class="history__card-titles-item">Номер замовлення</p>
+               <p class="history__card-titles-item">Спосіб оплати</p>
+               <p class="history__card-titles-item">Дата замовлення:</p>
+               <p class="history__card-titles-item">Дата доставки:</p>
+               <p class="history__card-titles-item">Статус замовлення:</p>
+            </div>
+            <div class="history__card-values">
+               <p class="history__card-titles-item order-number">Замовлення №2334678954</p>
+               <p class="history__card-titles-item payment-method">Банківска карта</p>
+               <p class="history__card-titles-item ordered">19.05.2020</p>
+               <p class="history__card-titles-item completed">23.05.2020</p>
+               <p class="history__card-titles-item status-canceled">Відмінено</p>
+            </div>
+            <div class="history__card-order-container">
+               <div class="ordered">
+                  <div class="history__card-order">
+                     <img src="../assets/img/product-big.jpg" alt="Product blank" class="history__card-order-img">
+                     <p class="history__card-order-name">Хачапурі</p>
+                     <div class="history__card-order-quantity">
+                        <span class="history__card-order-quantity-value">1шт</span>
+                     </div>
+                     <p class="history__card-order-price">350 ₴</p>
+                  </div>
+                  <div class="history__card-order">
+                     <img src="../assets/img/product-big.jpg" alt="Product blank" class="history__card-order-img">
+                     <p class="history__card-order-name">Хачапурі</p>
+                     <div class="history__card-order-quantity">
+                        <span class="history__card-order-quantity-value">1шт</span>
+                     </div>
+                     <p class="history__card-order-price">350 ₴</p>
+                  </div>
+               </div>
+               <button class="history__card-order-btn">
+                  <span>Повторити замовлення</span>
+                  <img src="../assets/img/svg/circle.svg" alt="Remake order icon">
+               </button>
+            </div>
+         </div>
+      </section>
+</section>
+      
+
+   </main>
+   
+   <footer class="footer">
+      <div class="footer__wrapper">
+         <div class="footer__left">
+            <div class="footer__left-phones">
+               <div class="footer__left-phones-1">
+                  <h3>Безкоштовний дзвінок по Україні</h3>
+                  <p>+380-95-340-3188</p>
+               </div>
+               <div class="footer__left-phones-2">
+                  <h3>Для прийому замовлень</h3>
+                  <p>+380-95-340-3188</p>
+               </div>
+            </div>
+            <p>Графік работи по будням з 9:00 до 20:00</p>
+            <p class="footer__left-email">Email: info@ua</p>
+            <a href="/help" class="footer__left-help">Підтримка</a>
+            <div class="footer__left-copyright">
+               <p>©2023. Піросмані</p>
+               <p>Умови і згода</p>
+               <p>Політика конфіденційності</p>
+            </div>
+         </div>
+         <div class="footer__right">
+            <div class="footer__right-socials">
+               <a href="#" class="footer__right-socoals-insta">Ми в інстаграм</a>
+               <a href="#" class="footer__right-socoals-facebook">Ми в фейсбук</a>
+            </div>
+            <a href="#" class="footer__right-log">
+               <img src="/assets/img/svg/person-footer.svg" alt="Person icon">
+               Вхід/Реєстрація</a>
+         </div>
+      </div>
+   </footer>
+
+</body>

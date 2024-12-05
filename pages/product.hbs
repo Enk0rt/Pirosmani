@@ -1,0 +1,202 @@
+
+<body>
+
+<main>
+
+   <div class="about">
+      <div class="about-conteiner">
+         <img src="../assets/img/product.png" alt="Product image" class="about__image cart-img" id="product-image">
+         <div class="about__product cart-item" id="product">
+            <h3 class="cart-name" id="product-name"></h3>
+            <div class="star-rating">
+            </div>
+            <p class="about__product-comments" id="product-reviews">
+            </p>
+            <div class="about__product-info">
+               <div class="about__product-price">
+                  <p class="title">Ціна</p>
+                  <p class="price cart-price"><span id="product-price">0</span> ₴</p>
+               </div>
+               <div class="about__product-amount">
+                  <p class="title">К-сть в упаковці</p>
+                  <p class="amount"id="product-quantity">4 <span>шт.</span></p>
+               </div>
+               <div class="about__product-quantity">
+                  <p class="title">Кількість</p>
+                  <div class="about__product-quantity-box">
+                     <div class="about__product-quantity-conteiner">
+                        <button class="minus" id="minus"> - </button>
+                        <input type="number" class="quantity" id="quantity" value="1" min="1" max="100">
+                        <button class="plus" id="plus"> + </button>
+                     </div>
+                     <p class="title">Од. виміру упаковки</p>
+                  </div>
+               </div>
+               <div class="about__product-sum">
+                  <p>В сумі до оплати</p>
+                  <p><span class="sum" id="sum">0</span></p>
+               </div>
+               <div class="about__product-buttons">
+                  <a href="/order" class="about__product-btn btn to-cart">Купити</a>
+                  <button class="about__product-btn-cart btn to-cart ">
+                     <img src="/assets/img/svg/cart-white.svg" alt="Cart">
+                  </button>
+               </div>
+            </div>      
+         </div>
+         </div>
+         <div class="about-conteiner">
+            <div class="about__tabs">
+               <ul class="tabs" id="tabs">
+                  <li class="tabs__item" id="about">
+                     <h3 class="tabs__title " >Про товар</h3>
+                  </li>
+                  <li class="tabs__item" id="params">
+                     <h3 class="tabs__title ">Параметри</h3>
+                  </li>
+                  <li class="tabs__item" id="comments">
+                     <h3 class="tabs__title">Відгуки</h3>
+                  </li>
+               </ul>
+               <div class="tab-content">
+                     <div class="about__description tab-content__item" id="about-content">
+                        <h3>Опис</h3>
+                        <p class="about__decription-info" id="product-info">
+                        </p>
+                        <p class="about__description-weight" id="weight">
+                        </p>
+                        <p class="about__description-producer" id="info-producer">
+                        </p>
+                     </div>
+                     <div class="about__parameters tab-content__item" id="params-content">
+                        <p class="about__parameters-info" id="calories"> </p>
+                        <p class="about__parameters-info" id="fats"> </p>
+                        <p class="about__parameters-info" id="proteins"> </p>
+                        <p class="about__parameters-info" id="carbohydrates"></p>
+                        <p class="about__parameters-info" id="mass"></p>
+                     </div>
+                     <div class="about__comments tab-content__item" id="comments-content">
+                        <div class="about__comments-container">
+                           <div class="about__comments-card">
+                              <div class="about__comments-card-profile">
+                                 <h3 class="about__comments-card-profile-title">
+                                    Анатолій Козак
+                                 </h3>
+                                 <div class="about__comments-card-profile-rate"></div>
+                                 <a href="" class="about__comments-card-profile-link">facebook.com/anatoliy</a>
+                              </div>
+                              <p class="about__comments-card-comment">Lorem ipsum dolor sit amet, consectetur  ipisicing elit. Harum ipsam
+                                 ipsa accusamus consequuntur sit vero aliquam amet
+                                 quibusdam voluptate tenetur eos doloremque iusto nostrum corrupti, nobis esse fuga fugit magnam temporibus
+                                 quos nihil et
+                                 sed. Ea quisquam atque delectus quia.</p>
+                              <button class="about__comments-card-button">Читати повністю</button>
+                           </div>
+                           <div class="about__comments-card">
+                              <div class="about__comments-card-profile">
+                                 <h3 class="about__comments-card-profile-title">
+                                    Анатолій Козак
+                                 </h3>
+                                 <div class="about__comments-card-profile-rate"></div>
+                                 <a href="" class="about__comments-card-profile-link">facebook.com/anatoliy</a>
+                              </div>
+                              <p class="about__comments-card-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam
+                                 ipsa accusamus consequuntur sit vero aliquam amet quibusdam voluptate tenetur eos doloremque iusto nostrum
+                                 corrupti, nobis esse fuga fugit magnam temporibus quos nihil et sed. Ea quisquam atque delectus quia.</p>
+                              <button class="about__comments-card-button">Читати повністю</button>
+                           </div>
+                           <button class="about__comments-card-button-more">
+                              Більше
+                           </button>
+                        </div>
+                        <button class="about__comments-button btn">
+                           Залишити відгук
+                        </button>
+                     </di  v>
+                  </div>
+               </div>
+         </div>
+         <div class="promo">
+            <h3 class="promo__title">
+               Замовте на 500 грн та отримайте
+            </h3>
+            <ul class="romo__list">
+               <li class="promo__items">
+                  <img class="promo__items-pic" src="/assets/img/svg/pig.svg" alt="Money pig">
+                  <span>
+                     20 грн на бонусний рахунок
+                  </span>
+               </li>
+               <li class="promo__items">
+                  <img class="promo__items-pic" src="/assets/img/svg/delivery.svg" alt="Delivery car">
+                  <span>
+                     Безкоштовна доставка
+                  </span>
+               </li>
+            </ul>
+            <div class="promo__calc">
+               <span class="promo__calc-base">0</span>
+               <div class="promo__calc-body">
+                  <h4 class="promo__calc-title current-amount"><span id="current-amount">250</span> (мінімальне замовлення)</h4>
+                  <div class="promo__calc-line">
+                     <input type="range" name="price-range" id="price-range" class="price-range" min="0" max="500" step="1" value="0" disabled>
+                  </div>
+                  <p class="promo__calc-info calc-info" id="calc-info">Залишилось 250 грн до безкоштовної доставки</p>
+               </div>
+               <span class="promo__calc-need">500</span>
+            </div>
+         </div>
+      </div>
+      <section class="promotion" style="max-width: 1314px; margin: 0 auto; margin-top: 60px;">
+         <div class="promotion__announce">
+            <h2>
+               Безкоштовна доставка по Києву і області від 500 грн!
+            </h2>
+            <button class="promotion__btn btn">Оформити</button>
+         </div>
+         <img src="/assets/img/car.png" alt="Delivery car" class="promotion__img">
+      </section>
+      </div>
+   </div>
+
+
+</main>
+
+
+<footer class="footer">
+   <div class="footer__wrapper">
+      <div class="footer__left">
+         <div class="footer__left-phones">
+            <div class="footer__left-phones-1">
+               <h3>Безкоштовний дзвінок по Україні</h3>
+               <p>+380-95-340-3188</p>
+            </div>
+            <div class="footer__left-phones-2">
+               <h3>Для прийому замовлень</h3>
+               <p>+380-95-340-3188</p>
+            </div>
+         </div>
+         <p>Графік работи по будням з 9:00 до 20:00</p>
+         <p class="footer__left-email">Email: info@ua</p>
+         <a href="/pages/help.html" class="footer__left-help">Підтримка</a>
+         <div class="footer__left-copyright">
+            <p>©2023. Піросмані</p>
+            <p>Умови і згода</p>
+            <p>Політика конфіденційності</p>
+         </div>
+      </div>
+      <div class="footer__right">
+         <div class="footer__right-socials">
+            <a href="#" class="footer__right-socoals-insta">Ми в інстаграм</a>
+            <a href="#" class="footer__right-socoals-facebook">Ми в фейсбук</a>
+         </div>
+         <a href="#" class="footer__right-log">
+            <img src="/assets/img/svg/person-footer.svg" alt="Person icon">
+            Вхід/Реєстрація</a>
+      </div>
+   </div>
+</footer>
+
+   
+  
+</body>

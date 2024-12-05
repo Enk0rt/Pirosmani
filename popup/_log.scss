@@ -1,0 +1,140 @@
+.modals {
+   display: none;
+   &__overlay {
+      z-index: 100;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0,0,0,0.6);
+      padding: 15px;
+      height: 100%;
+      width: 100%;
+      opacity:0;
+      transition: opacity 0.2s ease;
+   }
+
+   &__content {
+      @include medium($f18, $black);
+      
+      position: relative;
+      // max-width: 384px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $white;
+      border-radius: $radius;
+
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+
+      &-pic {
+         width: 34px;
+      }
+
+      &-close{
+         cursor: pointer;
+      }
+
+      &-close {
+         position: absolute;
+         top: 18px;
+         right: 18px;
+      }
+
+      &-title {
+         display: flex;
+         justify-content: center;
+         text-align: center;
+         margin-top: 20px;
+      }
+      .login-title{
+         @include medium($f14, $black);
+      }
+      
+      
+      &-form {
+         display: flex;
+         flex-direction: column;
+         margin-top: 21px;
+         color:#C6C6C6;
+         
+         .tel-ico{
+            background-image: url(/assets/img/svg/phone-gray.svg);  
+         }
+
+         &-pass{
+            background-image: url(/assets/img/svg/key-gray.svg);
+            margin-top: 21px;
+         }
+        
+
+         
+   
+         &-btn{
+            @include medium($f10,$white);
+
+            padding: 11px 20px !important;
+            min-width: 146px;
+            margin: 0 auto;
+            margin-top: 12px;
+            text-align: center;
+            &:hover{
+               opacity: 0.7;
+            }        
+            
+         }
+         &-forget {
+            @include medium($f12, $main-color);
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            text-decoration: underline;
+         }
+      }      
+      &-reg{
+         @include medium($f12,$black);
+         margin-top: 20px;
+         align-self: center;
+      }
+      &-reg-link{
+         color: $main-color;
+         text-decoration: underline;
+         cursor: pointer;
+      } 
+   } 
+
+
+   .input{
+      padding: 15px 15px 15px 45px;
+      background-repeat: no-repeat;
+      background-position: 18px center;
+      border-radius: $radius;
+      border: 1px solid #EBEBEB;
+      color: #C6C6C6;
+   }
+   
+   // РЕЄСТРАЦІЯ
+   
+}
+ 
+
+/* Анімація для появи модального вікна */
+.show {
+   opacity: 1;
+   transform: translateY(0);
+   transition: 0.3s ease;
+}
+
+/* Анімація для зникнення контенту */
+.fade-out {
+   opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.3s ease, transform 0.3s ease;
+}

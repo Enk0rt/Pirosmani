@@ -1,0 +1,222 @@
+.block{
+   display: none;
+}
+#no-data{
+   width: 100%;
+   height: 320px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   @include medium($f24, $main-color);
+}
+#cart-sum{
+   width: 50%;
+   text-align: right;
+   align-self: center;
+}
+
+.cart{
+   margin-top: 60px;
+   gap: 66px;
+   max-width: 1314px;
+   margin: 60px auto 0 auto;
+   &-count{
+      position: absolute;
+         top: 0;
+         right: 0;
+         width: 18px;
+         height: 18px;
+         border: 2px solid $main-color;
+         border-radius: 50%;
+         background-color: $white;
+         span{
+            display: block;
+            @include medium($f14,$main-color);
+         }
+   }
+   &__container{
+      display: flex;
+      justify-content: space-between;
+      gap: 82px;
+      
+   }
+ 
+   &__list{
+      max-height: 249px;
+      overflow-y: auto;
+      margin-top: 12px;
+      &-item{
+         width: 100%;
+         display: flex;
+         height: 124px;
+         justify-content: flex-start;
+         align-items: center;
+         
+         border-top: 1px solid #EBEBEB;
+         &:last-child {
+               border-bottom: 1px solid #EBEBEB;
+            }
+         &-delete{
+            cursor: pointer;
+               transition: .3 ease;
+            &:hover{
+               transform: rotate(180deg);
+               transition: .3 ease;
+            }
+         }
+         &-pic{
+            margin-left: 15px;
+            width: 111px;
+            height: 82px;
+            border-radius: $radius;
+         }
+         &-title{
+            width: 240px;
+            margin-left: 40px;
+            @include regular($f18,$black);
+            
+         }
+         &-quantity-conteiner{
+            margin-left: 65px;
+
+            @include regular($f12, $black);
+               
+               padding: 10px 22px;
+               border: 1px solid #EBEBEB;
+               border-radius: 10px;
+               background-color: #FCFCFC;
+         }
+         &-price{
+            width: 120px;
+            margin-left: 30px;
+            text-align: right;
+            justify-self: flex-end;
+            @include medium($f20, $black);
+           
+         }
+      }
+      
+   }  
+   
+   &__order{
+      
+      padding: 50px 30px;
+      border-radius: $radius;
+      box-shadow: 0 0 27px rgba(0, 0, 0, 0.06);
+      &-title{
+         @include medium($f20,$black);
+      }
+      &-info{
+         width: 316px;
+         margin-top: 39px;
+         &-title{
+            width: 50%;
+         }
+         display: flex;
+         justify-content: space-between;
+        
+      }
+      &-promocode{
+         width: 316px;
+         margin-top: 35px;
+         
+         display: flex;
+         justify-content: space-between;    
+         
+         
+         &-title{
+            width: 100%;
+            align-self: center;
+         }
+         &-value{
+            @include medium($f18,$main-color);
+            width: 100%;
+            text-align: right;
+         }
+      }
+      &-total{
+         margin-top: 45px;
+
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+      }
+      &-btn{
+         display: block;
+         text-align: center;
+         margin-top: 30px;
+         padding: 16px 21px;
+         @include medium($f16, $white);
+      }
+   }
+   &__promocode{
+      width: 376px;
+      display: flex;
+      &-form{
+         &-title{
+            margin-top: 45px;
+            // padding-left: 30px;
+         }
+         &-input{
+            margin-top: 20px;
+            padding: 15px;
+            width: 190px;
+            height: 47px;
+            border: 1px solid #EBEBEB;
+            border-radius: $radius;
+            outline: none;
+            @include medium($f18, $text-color-gray);
+            &::placeholder{
+               @include regular($f14,#C6C6C6);
+            }
+         }
+         &-btn{
+            margin-left: 37px;
+            @include regular($f14, $white);
+            padding: 13px 30px;
+         }
+      }
+   }
+
+}
+   
+#cart__promo {
+   margin-top: 42px;
+   padding: 33px 62px 51px 62px;
+   .promo{
+      &__title{
+         @include regular($f24,$black);
+      }
+      &__list{
+         span{
+            @include medium($f20, $black);
+         }
+      }
+      &__calc {
+         gap: 15px;
+         align-items: center;
+         &-title{
+            @include regular($f14, $black);
+         }
+         &-info{
+            @include medium($f12, $black);
+         }
+         &-body {
+            flex-grow: 1;
+
+            input[type="range"] {
+               width: 100%;
+            }
+         }
+
+         &-base,
+         &-need {
+            margin-top: 8px;
+            @include medium($f14, $black);
+         }
+      }
+   }
+   
+}
+
+

@@ -1,0 +1,30 @@
+ .mail{
+   max-width: 555px;
+   align-items: normal;
+   padding: 64px;
+    .modals__content{
+      &-pic{
+         align-self: center;
+      }
+       &-form{
+          &-email {
+            display: flex;
+            align-self: flex-start;
+             width: 100%;
+             background-image: url('/assets/img/svg/mail-gray.svg');
+             background-size: 18px;
+             padding: 20px 20px 20px 54px;
+             margin-top: 40px;
+          }
+          &-btn{
+            @include medium($f18,$white);
+            padding: 15px 60px!important;
+
+          }
+       }
+     }
+     .email-title{
+          @include medium($f22,$black);
+          margin-top: 24px;
+      }
+  }

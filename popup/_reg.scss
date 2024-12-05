@@ -1,0 +1,64 @@
+.signup-title {
+   @include medium($f18, $black);
+}
+.modals__content{
+
+   &-form{
+      &-checkbox {
+         display: flex;
+         @include regular($f12, #C6C6C6);
+         line-height: 1.5;
+         text-align: left;
+         margin-bottom: 14px;
+         max-width: 320px;
+         input {
+            position: relative;
+            opacity: 0;
+      
+            &:checked {
+               ~label {
+                  &::before {
+                     background: $main-color;
+                     border: 2px solid #FCFCFC;
+                  }
+               }
+            }
+      
+            ~label {
+               position: relative;
+               margin-left: 15px;
+      
+               a {
+                  color: $main-color;
+               }
+      
+               &::before {
+                  content: '';
+                  position: absolute;
+                  width: 12px;
+                  height: 12px;
+                  top: 0;
+                  left: -29px;
+                  border-radius: 50%;
+                  border: 2px solid #EBEBEB;
+               }
+            }
+      
+            label {
+               margin-left: 30px;
+               
+            }
+         }
+      }
+   }
+      &-log{
+         @include medium($f12, $black);
+         margin-top: 20px;
+         align-self: center;
+      }
+      &-log-link{
+         color: $main-color;
+            text-decoration: underline;
+            cursor: pointer;
+      }
+   }

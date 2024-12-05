@@ -1,0 +1,185 @@
+
+<body>
+   <main>
+           <div class="order">
+              <section class="cart__products">
+                  <div>
+                     <h2 class="order__title">
+                        Оформлення замовлення
+                     </h2>
+                     <h3 class="order__subtitle">
+                        Ви замовили
+                     </h3>
+                     <ul class="cart__list" id="cart-list">
+                     </ul>
+                  </div>
+                  <div class="order__ticket">
+                     <div class="order__ticket-tabs">
+                        <button class="order__ticket-tabs-btn btn-active switch">
+                           Доставка
+                        </button>
+                        <button class="order__ticket-tabs-btn switch" id="apply-discount">
+                           Самовивіз (-20%)
+                        </button>
+                     </div>
+                     <div class="order__ticket-container">
+                        <ul class="order__ticket-list">
+                           <li class="order__ticket-list-item">Загальна вартість</li>
+                           <li class="order__ticket-list-item" id="order__total">300 ₴</li>
+                           <li class="order__ticket-list-item">До оплати</li>
+                        </ul>
+                        <ul class="order__ticket-list">
+                           <li class="order__ticket-list-item">Доставка</li>
+                           <li class="order__ticket-list-item"><span id="discount">0 ₴</span></li>
+                           <li class="order__ticket-list-item">
+                              <span id="to-pay"></span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </section>
+
+               <section class="cart__make-order delivery">
+                  <form action="post" class="cart__make-order-form delivery__form">
+               
+                     <!-- CUSTOM SELECT -->
+                     <label class="cart__make-order-form-input-title">
+                        <span>Район доставки</span>
+                        <div class="restourant">
+                           <div class="select" id="select">
+                              <div class="select__header cart__make-order-form-input-name">
+                                 <span class="select__current ">Дніпровський</span>
+                                 <div class="select__icon"><img src="../assets/img/svg/arrow-menu.svg" alt="Select arrow">
+                                 </div>
+                              </div>
+                              <div class="select__body">
+                                 <div class="select__item" id="darnucia">Дніпровський</div>
+                                 <div class="select__item" id="darnucia">Дарницький</div>
+                                 <div class="select__item" id="dnipro">Шевченківський</div>
+                                 <div class="select__item" id="pechersk">Печерський</div>
+                                 <div class="select__item" id="soloma">Солом'янський</div>
+                              </div>
+                           </div>
+                        </div>
+                     </label>
+                     <!-- --------------- -->
+                     <label class="cart__make-order-form-input-title">
+                        <span>ПІБ</span>
+                        <input type="name" class="input cart__make-order-form-input-name" placeholder="Введіть ваше повне ім'я">
+                     </label>
+                     <label class="cart__make-order-form-input-title">
+                        <span>Телефон</span>
+                        <input type="tel" class="input cart__make-order-form-input-tel" placeholder="+380">
+                     </label>
+                     <label class="cart__make-order-form-input-title">
+                        <span>Адреса доставки</span>
+                        <input type="name" class="input cart__make-order-form-input-name" placeholder="Введіть адресу доставки">
+                     </label>
+               
+                     <!-- CUSTOM SELECT -->
+                     <label class="cart__make-order-form-input-title">
+                        <span>Спосіб оплати</span>
+                        <div class="payment-method">
+                           <div class="select" id="select">
+                              <div class="select__header cart__make-order-form-input-name">
+                                 <span class="select__current">Готівка</span>
+                                 <div class="select__icon"><img src="../assets/img/svg/arrow-menu.svg" alt="Select arrow">
+                                 </div>
+                              </div>
+                              <div class="select__body">
+                                 <div class="select__item" id="cash">Готівка</div>
+                                 <div class="select__item" id="card">Карта</div>
+                              </div>
+                           </div>
+                        </div>
+                     </label>
+                     <!-- --------------- -->
+                     <div class="box">
+                        <p class="cart__make-order-form-comment">Додати коментар</p>
+                     </div>
+                     <textarea name="textarea" id="comment" class="cart__make-order-form-textarea" placeholder="Введіть ваш коментар">
+                     </textarea>
+                     <input type="submit" class="btn cart__make-order-form-btn" value="Оформити замовлення">
+                  </form>
+               </section>
+               <section class="cart__make-order takeout">
+                  <form action="post" class="cart__make-order-form takeout__form">
+                     <label class="cart__make-order-form-input-title takeout__title">
+                        <span>ПІБ</span>
+                        <input type="name" class="input cart__make-order-form-input-name takeout__name" placeholder="Введіть ваше повне ім'я">
+                     </label>
+                     <label class="cart__make-order-form-input-title takeout__title">
+                        <span>Телефон</span>
+                        <input type="tel" class="input cart__make-order-form-input-tel takeout__name" placeholder="+380">
+                     </label>
+                     <!-- CUSTOM SELECT -->
+                     <label class="cart__make-order-form-input-title takeout__title">
+                        <span>Коли заберете?</span>
+                        <div class="takeout__take-time">
+                           <div class="select" id="select">
+                              <div class="select__header cart__make-order-form-input-name takeout__name">
+                                 <span class="select__current">Найближчим часом</span>
+                                 <div class="select__icon"><img src="../assets/img/svg/arrow-menu.svg" alt="Select arrow">
+                                 </div>
+                              </div>
+                              <div class="select__body takeout__time">
+                                 <div class="select__item" id="10h">Найближчим часом</div>
+                                 <div class="select__item" id="10h">10:00</div>
+                                 <div class="select__item" id="11h">11:00</div>
+                                 <div class="select__item" id="12h">12:00</div>
+                                 <div class="select__item" id="13h">13:00</div>
+                                 <div class="select__item" id="14h">14:00</div>
+                                 <div class="select__item" id="15h">15:00</div>
+                                 <div class="select__item" id="16h">16:00</div>
+                                 <div class="select__item" id="17h">17:00</div>
+                                 <div class="select__item" id="18h">18:00</div>
+                                 <div class="select__item" id="19h">19:00</div>
+                                 <div class="select__item" id="20h">20:00</div>
+                                 <div class="select__item" id="21h">21:00</div>
+                              </div>
+                           </div>
+                        </div>
+                     </label>
+                     <!-- --------------- -->
+                     <input type="submit" class="btn cart__make-order-form-btn takeout__btn" value="Оформити замовлення">
+                  </form>
+               </section> 
+           </div>
+   </main>
+
+   <footer class="footer">
+      <div class="footer__wrapper">
+         <div class="footer__left">
+            <div class="footer__left-phones">
+               <div class="footer__left-phones-1">
+                  <h3>Безкоштовний дзвінок по Україні</h3>
+                  <p>+380-95-340-3188</p>
+               </div>
+               <div class="footer__left-phones-2">
+                  <h3>Для прийому замовлень</h3>
+                  <p>+380-95-340-3188</p>
+               </div>
+            </div>
+            <p>Графік работи по будням з 9:00 до 20:00</p>
+            <p class="footer__left-email">Email: info@ua</p>
+            <a href="/help" class="footer__left-help">Підтримка</a>
+            <div class="footer__left-copyright">
+               <p>©2023. Піросмані</p>
+               <p>Умови і згода</p>
+               <p>Політика конфіденційності</p>
+            </div>
+         </div>
+         <div class="footer__right">
+            <div class="footer__right-socials">
+               <a href="#" class="footer__right-socoals-insta">Ми в інстаграм</a>
+               <a href="#" class="footer__right-socoals-facebook">Ми в фейсбук</a>
+            </div>
+            <a href="#" class="footer__right-log">
+               <img src="/assets/img/svg/person-footer.svg" alt="Person icon">
+               Вхід/Реєстрація</a>
+         </div>
+      </div>
+   </footer>
+
+  
+</body>

@@ -1,0 +1,276 @@
+// --------------------- USER CABINET -------------------------------
+.box{
+   display: flex;
+   justify-content: space-between;
+   height: 109px;
+}
+.information{
+   display: none;
+}
+span{
+   color: $black;
+}
+.user-cab {
+      gap: 66px;
+      max-width: 1314px;
+      min-height: 762px;
+      margin: 60px auto 127px auto;
+
+   &__personal-info {
+      width: 620px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__switch-buttons {
+      display: flex;
+   }
+
+   &__switch-btn {
+      width: 180px;
+      height: 109px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid transparent;
+      transition: .3s;
+      fill: $main-color;
+      &-pic {
+        
+      }
+      &>span{
+         margin-top: 12px;
+         @include medium($f14,$main-color);
+         line-height: 21px;
+      }
+      &:hover{
+         color: white;
+         border: 1px solid $main-color;
+         border-radius: $radius;
+      }
+   }
+
+   &__title {
+      margin-top: 54px;
+      @include medium($f28, $black);
+   }
+
+   &__avatar {
+      margin-top: 38px;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+       &-spot {
+         width: 96px;
+         height: 96px;
+         background-color: $main-color;
+         border-radius: $radius;
+       }
+      
+      &-upload {
+         @include regular($f18, $main-color);
+         height: 24px;
+         border-bottom: 1px solid $main-color;
+         cursor: pointer;
+         &:hover{
+            color: #01ca5c;
+            border-bottom: 1px solid #01ca5c;
+         }
+      }
+   
+   }
+
+   &__form {
+      margin-top: 57px;
+      &-label{
+         display: block;
+       margin-top: 33px;
+      }
+      &-input-name{
+         display: flex;
+         gap: 62px;
+      
+      }
+      &-input {
+         padding: 12px 29px;
+         width: 100%;
+         margin-top: 20px;
+            background: #FCFCFC;
+            border: 1px solid #EBEBEB;
+            border-radius: 10px;
+            outline: none;
+            @include medium($f18, $black);
+         
+            &::placeholder {
+               @include regular($f16, #C6C6C6);
+            }
+            
+      }
+
+      &-submit {
+         margin-top: 66px;
+         padding: 15px 180px;
+         width: 100%;
+         border: none;
+         border-radius: $radius;
+         background: $main-color;
+         cursor: pointer;
+         @include medium($f20, $white)
+         
+      }
+   }
+   &__other {
+     display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 620px;
+      &-password{
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+      }
+      &-title{
+         width: 330px;
+         line-height: 22px;
+         @include medium($f28, $black);
+      }
+      &-title-smallcase {
+         font-size: 20px;
+      }
+      &-form{
+         &-label{
+          
+            &:nth-child(1){
+               margin-top:38px ;
+            }
+         }
+      }
+      &-phone{
+         &-container {
+            margin-top: 48px;
+            display: flex;
+            gap: 76px;
+         }
+         &-input{
+            width: 254px;
+         }
+      }
+   }
+}
+.btn-active {
+   span{
+      color:$white;
+   }
+}
+
+#name{
+   width: 228px;
+}
+
+
+// ---------------- ORDER HISTORY --------------------------------
+
+.history {
+   display: none;
+   overflow-y: auto;
+   padding-top: 84px;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 40px;
+   &__card {
+      padding: 28px 30px;
+      display: grid;
+      grid-template-columns: 0.1fr 0.6fr 1fr;
+      width: 100%;
+      border-radius: $radius;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.07);
+       &-order {
+         max-height: 178;
+         padding: 14px 0 14px 78px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         border-bottom: 1px solid #EBEBEB;
+         &-container{
+            
+         }
+         &:first-child {
+           border-top: 1px solid #EBEBEB;
+         }
+         &-container{
+            display: flex;
+            flex-direction: column;
+         }
+         &-img {
+            display: block;
+            width: 80px;
+            height: 60px;
+            border-radius: 10px;
+         }
+
+      &-btn {
+         margin-top: 10px;
+         display: flex;
+         align-items: center;
+         align-self: flex-end;
+         gap: 30px;
+         span{
+            @include medium($f16,$main-color);
+            cursor: pointer;
+            &:hover{
+               color: #01ca5c;
+            }
+         }
+         img{
+            margin-bottom: 2px;
+            cursor: pointer;
+         }
+      }
+   }
+
+      &-titles {
+         width:180px;
+         display: flex;
+         flex-direction: column;
+
+         gap: 18px;
+         &-item {
+            text-align: left;
+         }
+
+      }
+
+      &-values {
+         margin-left: 10px;
+         width: 290px;
+         display: flex;
+            flex-direction: column;
+            
+            gap: 18px;
+      }
+   }
+}
+
+.order-number{
+   color: $main-color;
+}
+.status-completed{
+   color: $main-color;
+}
+.status-canceled{
+   color: #EB5757;
+}
+.ordered{
+   max-height: 180px;
+   overflow-y: auto;
+   direction: rtl;
+   /* ширина всей полосы прокрутки */
+}
+.active-page{
+   display: block;
+}
+.active-page-flex{
+   display: flex;
+}
