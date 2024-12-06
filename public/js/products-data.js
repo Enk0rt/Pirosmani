@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('product-name').textContent = product.name;
                 document.getElementById('product-image').setAttribute('src',product.image)
                 document.getElementById('product-price').textContent = `${product.price}`;
-                document.getElementById('sum').textContent = `${parseFloat(product.price)}`;
+                document.getElementById('sum').textContent = `${product.price.toFixed(2)}`;
                 document.getElementById('product-quantity').textContent = `${product.quantityInPack} шт.`;
                 document.getElementById('product-reviews').textContent = `Кількість відгуків: ${product.reviewsCount}`;
                 document.getElementById('product-info').textContent = `${product.info}`;
