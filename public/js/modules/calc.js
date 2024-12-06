@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Кількість:', quantityInput.value);
 
             // Очищаємо ціну від символів, окрім цифр і десяткових крапок
-            const price = parseFloat(priceElement.innerText.replace(/[^\d.-]/g, '', "₴"));
+            const price = parseFloat(priceElement.innerText);
             const quantity = parseInt(quantityInput.value);
         
             console.log('Очищена ціна:', price);
